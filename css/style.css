@@ -1,0 +1,110 @@
+
+			*{
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+			}
+			.main{
+				background: url(../img/1.jpg);
+				margin: 0 auto;
+				width: 960px;
+				height: 540px;
+				position: relative;
+				background-size: 960px;
+				
+			}
+			#h1{
+				top: 315px;
+				left: 140px;
+			}
+			#h2{
+				top: 320px;
+				left: 282px;
+			}
+			#h3{
+				top: 324px;
+				left: 420px;
+			}
+			#h4{
+				top: 330px;
+				left: 538px;
+			}
+			#h5{
+				top: 320px;
+				left: 695px;
+			}
+			#h6{
+				top: 347px;
+				left: 800px;
+			}
+			
+			#h1,#h2,#h3,#h4,#h5,#h6{
+				position: absolute;
+				display: none;
+			}
+			.click{
+				background: url(../img/borders.png);
+				width:90px ;
+				height: 90px;
+				top: 315px;
+				left: 140px;
+			}
+			.click:hover{
+				background: url(../img/twoborders.png);
+				display: block;
+			}
+			
+			.name{
+				position: absolute;
+				width:85px ;
+				height: 31px;/*边框的位置*/
+				line-height: 28px;/*文字的位置*/
+				top: -40px;
+				left: -2px;
+				text-align: center;
+				font-weight: 900;
+				border: 3px solid white;
+				border-radius: 8px;/*设置边框圆角*/
+				background: transparent;/*边框背景透明*/
+				box-sizing: border-box;
+				display: none;
+			}
+			.main:hover #h1,
+			.main:hover #h2,
+			.main:hover #h3,
+			.main:hover #h4,
+			.main:hover #h5,
+			.main:hover #h6{
+				display: block;
+			}
+			#h1:hover .name,
+			#h2:hover .name,
+			#h3:hover .name,
+			#h4:hover .name,
+			#h5:hover .name,
+			#h6:hover .name{
+				display: block;
+			}
+			.name:after{
+				content: "";
+				width: 0;
+				height: 0;
+				border-style: solid solid solid solid; 
+				border-width: 10px 10px 10px 10px;
+				/*border-left-color: blue;
+				border-right-color: #008B8B;
+				border-top-color: #FFFF00;
+				border-bottom-color: #DDA0DD;*/
+				border-color: white transparent transparent transparent;
+				display: block;
+				position: absolute;
+				left: 30px;
+				top: 28px;
+			}
+			.main #hh{
+				text-align: center;
+				font-size: 60px;
+				color: white;
+				text-shadow:4px 4px 4px black;
+				/*font-style: italic;*//*设置文本斜体*/
+			}
